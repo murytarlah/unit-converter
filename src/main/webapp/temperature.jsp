@@ -5,7 +5,7 @@
 
     <div class="container">
        <h2>Temperature</h2>
-       <form action="result" method="post">
+       <form action="result.jsp" method="  post">
            <input type="hidden" name="type" value="temperature">
 
            <label for="value">Enter the weight to convert:</label>
@@ -14,7 +14,7 @@
            <label for="fromUnit">Unit to Convert from:</label>
            <select name="fromUnit" id="fromUnit">
                <option value="celsius">Celsius</option>
-               <option value="fahrenheit">Fahrenheit</option>
+               <option value="fahrenheit">Fahrenheit</option>f
                <option value="kelvin">Kelvin</option>
            </select>
 

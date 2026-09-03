@@ -6,7 +6,7 @@
 <div class="container">
      <h2>Length</h2>
 
-      <form action="result" method="post">
+      <form action="result.jsp" method="post">
           <input type="hidden" name="type" value="weight">
 
           <label for="value">Enter the weight to convert:</label>
