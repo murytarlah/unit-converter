@@ -6,7 +6,11 @@
 
 <body>
 
-Let's see the result: <%= UnitConverter.converted("10") %>
+
+<%=
+String unitValue = request.getParameter("inputValue");
+Let's see the result: <%= UnitConverter.converted(unitValue.) %>
+%>
 
 </body>
 

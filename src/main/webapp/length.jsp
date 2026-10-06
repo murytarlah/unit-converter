@@ -6,14 +6,14 @@
 <div class="container">
      <h2>Length</h2>
 
-      <form action="result.jsp" method="post">
-          <input type="hidden" name="type" value="weight">
+      <form action="/convert" method="post">
+          <input type="hidden" name="type" value="inputValue">
 
-          <label for="value">Enter the weight to convert:</label>
-          <input type="number" name="value" id="value" step="any" required>
+          <label for="value">Enter the length to convert:</label>
+          <input type="number" name="inputValue" id="value" step="any" required>
 
           <label for="fromUnit">Unit to Convert from:</label>
-          <select name="fromUnit" id="fromUnit">
+          <select name="conversionType" id="fromUnit">
               <option value="millimeter">Millimeter</option>
               <option value="centimeter">Centimeter</option>
               <option value="meter">Meter</option>
@@ -25,7 +25,7 @@
           </select>
 
           <label for="toUnit">Unit to Convert to:</label>
-          <select name="toUnit" id="toUnit">
+          <select name="outputType" id="toUnit">
 			<option value="millimeter">Millimeter</option>
 			<option value="centimeter">Centimeter</option>
 			<option value="meter">Meter</option>
