@@ -1,18 +1,16 @@
-<%@ page import="com.mury.unitconverter.*" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
-
+<jsp:include page="header.html"/>
 <html>
+	<style>
+            result  {
+                margin: 0 auto;
+                padding: 20;
 
-
+            }
+     </style>
 <body>
 
-
-<%=
-String unitValue = request.getParameter("inputValue");
-Let's see the result: <%= UnitConverter.converted(unitValue.) %>
-%>
-
+    <div class="result" >The conversion of ${inputValue}${inputUnit} = ${result}${outputUnit} </div>
 </body>
-
-</html>
 </html>

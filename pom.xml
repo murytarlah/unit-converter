@@ -36,12 +36,18 @@
     <finalName>unit-converter</finalName>
     <plugins>
       <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven3-plugin</artifactId>
+        <version>1.10.20</version>
         <configuration>
-          <path>/</path>
-          <port>8080</port>
+          <container>
+            <containerId>tomcat10x</containerId>
+          </container>
+          <configuration>
+            <properties>
+              <cargo.servlet.port>8080</cargo.servlet.port>
+            </properties>
+          </configuration>
         </configuration>
       </plugin>
     </plugins>
